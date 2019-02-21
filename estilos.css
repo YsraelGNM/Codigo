@@ -1,0 +1,3 @@
+#tabla1 td:nth-child(odd), tabla1 th:nth-child(odd){
+    background-color: blueviolet;
+        }
