@@ -1,0 +1,26 @@
+/*Transformaciones*/
+/*scale(x,y) => cambia el tamaño del elemento*/
+/*rotate(angulo[30deg]) => rota el elemento dado un numero de grados*/
+/*traslate(x,y) => mueve el elemento desde su posicion original*/
+/*skew(angulo[30deg]) => inclina el elemento*/
+/*Observacion: para aplicar mas de una transformación, debe de icluirse todas en una sola linea.*/
+header{
+    margin-top: 40px;
+    padding: 10px;
+    border: 1px solid red;
+    text-align: center;
+    /*transform: scale(1.5);*/
+    /*transform: translate(100px,100px);*/
+    /*transform: rotate(45deg);*/
+    /*transform: scale(1.5) translate(100px,100px) rotate(45deg);*/
+    transition-duration: 0.5s;
+    /*delay => es el tiempo que demora al empezar la transicion.*/
+    transition-delay: 1s;
+    /*Curva de BEZIER => ease-in-out | step-end | ease | step-start.*/
+    transition-timing-function: ease-in-out;
+}
+
+header:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}

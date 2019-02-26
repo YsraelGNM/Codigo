@@ -1,0 +1,35 @@
+header{
+    border: 1px solid black;
+    /*box-shadow: rgb(123,123,123) 5px 5px 5px inset;*/
+    box-shadow: rgb(123,123,123) 5px 5px 5px;
+    /*el prefijo webkit hace efecto en chrome y safari*/
+    /*el prefijo moz hace efecto en mozilla*/
+    /*el prefijo o hace efecto en opera*/
+    /*background: -webkit-linear-gradient(top,blue,red);*/
+    background: -webkit-linear-gradient(45deg,transparent,red,yellow,green);
+    /*background-image: url('../../../Proyecto-1/img/marvel.png')*/
+}
+h1{
+    text-shadow: violet 5px 5px 5px;
+    /*background-image: url('../../../Proyecto-1/img/marvel.png')*/
+    /*gradiente radial - param= ellipse y circle*/
+    background: -webkit-radial-gradient(left, ellipse,transparent,lightgreen);
+}
+body{
+    background-image: url('../../../Proyecto-1/img/marvel.png');
+    background-size: cover;
+    opacity: 0.2;
+    /*filter: opacity(0.2)*/
+}
+
+/*FILTROS*/
+/*blur => difuminado y va de 1 a 10px.*/
+/*grayscale => convierte en escala de grises y va de 0.1 a 1*/
+/*invert => invierte los colores y produce un negativo y va de 0.1 a 1*/
+/*opacity => cambia la opacidad del elemeto y va de 0 = transparente a 1 = solido.*/
+/*brightness => cambia el brillo de la imagen y va de 0.1  a  10*/
+section{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}

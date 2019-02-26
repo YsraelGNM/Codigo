@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    margin-top: 15px;
+    padding: 10px 20px 30px 40px;
+    border: 1px solid red;
+}
+h1{
+    border: 1px solid blue;
+    padding: 15px 15px;
+}
+main{
+    border: 1px solid orange;
+    width: 700px;
+    height: 500px;
+    background-color: rgba(100,200,150, 0.5);
+    color: brown;
+    background-image: url('https://placehold.it/200x200');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body{
+    background-image: url('./Imagen/textura.png');
+}

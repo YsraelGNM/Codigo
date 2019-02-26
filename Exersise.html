@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro de Personal</h1>
+    <hr/>
+    <!-- Conjunto de elementos para ingresar gatos -->
+    <!-- action => ruta o direccion de destino hacia
+    donde los datos del formulario serán enviados -->
+    <!-- METHOD GET=> Verbo HTTP para enviar los datos a través
+    de la URL (VISIBLE por el usuario)-->
+    <!-- METHOD POST=> Verbo HTTP para enviar los datos a través
+    del servidor (INVISIBLE por el usuario) -->
+    <form action="./procesar.html" method="GET">
+    <hr/>
+    <table>
+       
+       <tbody>
+           <tr>
+            <td><label for="IdNombres">Nombre:</label></td>
+            <td> <input type="text" name="nombres" id="IdNombres" required minlength="10" maxlength="20" placeholder="Ingrese su Nombre"></td>
+        </tr>
+        <tr>
+                <td><label for="IdEdad">Edad:</label></td>
+                <td><input type="number" name="edad" id="IdEdad"></td>
+            </tr>
+            <tr>
+                    <td><label for="IdEmail">Email:</label></td>
+                    <td><input type="email" name = "email" id="IdEmail" required> </td>
+                </tr>
+
+                <tr>
+                        <td><label for="IdFecNac">Fecha de Nacimiento:</label></td>
+                        <td><input type="date" name="fecha" id="IdFecNac" required></td>
+                    </tr>
+
+                    <tr>
+                            <td><label for="masc">Genero:</label></td>
+                            <td><label for="masc">Masculino</label>
+                                <input type="radio" name="genero" id="masc" value="M" checked>
+                                <label for="fem">Femenino</label>
+                                <input type="radio" name="genero" id="fem" value="F">
+                                <label for="todo">No especifica</label>
+                                <input type="radio" name="genero" id="todo" value="T"></td>
+                        </tr>
+
+                        <tr>
+                                <td><label for="comedia">Preferencia:</label></td>
+                                <td><label for="comedia">Comedia</label>
+                                    <input type="checkbox" name="comedia" value="com" id="comedia">
+                                
+                                    <label for="accion">Accion</label>
+                                    <input type="checkbox" name="accion" value="acc" id="accion">
+                                
+                                    <label for="terror">Terror</label>
+                                    <input type="checkbox" name="terror" value="ter" id="terror"></td>
+                            </tr>
+
+                            <tr>
+                                    <td><label for="mensaje">Mensaje:</label></td>
+                                    <td><textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea></td>
+                                </tr>
+
+                                <tr>
+                                        <td><label for="distrito">Distrito:</label></td>
+                                        <td> <select name="distrito" id="distrito">
+                                                <option value="CC">Cerro Colorado</option>
+                                                <option value="CA">Cayma</option>
+                                                <option value="YA">Yanahuara</option>
+                                            </select></td>
+                                    </tr>
+
+                                    <tr>
+                                            <td><label for="IdContrasena">Contraseña:</label></td>
+                                            <td><input type = "password" name="password" pattern="(?=.*\d)(?=.*\[a-z]])(?=.*\[A-Z]]){6,}" title="Mínimo 6 caracteres" id="IdContrasena" required></td>
+                                        </tr>
+
+                                        <tr>
+                                                <td></td>
+                                                <td><input type="submit" value="Iniciar Sesión"></td>
+                                            </tr>
+
+       </tbody>
+       
+       
+       
+       
+       
+    </table>
+
+    </form>
+
+</body>
+</html>

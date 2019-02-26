@@ -1,0 +1,53 @@
+#id1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+#id2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+}
+
+#id3{
+    font: bolder 24px 'Curier New', Sans-Serif;
+}
+
+#id4{
+    text-indent: 20px;
+}
+
+#id5{
+    letter-spacing: 7px;
+}
+
+#id6{
+    word-spacing: 9px;
+}
+
+#id7{
+    line-height: 45px;
+}
+
+#id8{
+    text-decoration: underline;
+    font-family: "harry";
+    font-size: 35px;
+}
+
+@font-face{
+    font-family: "harry";
+    src: url('./Fonts/HARRYP__.TTF');
+}
+
+table{
+    table-layout: fixed;
+    width: 250px;
+}
+
+th, td {
+    border: 1px solid blue;
+    width: 150px;
+    word-wrap: break-word;
+}

@@ -1,0 +1,66 @@
+#unparrafo{
+    color: blue;
+    font-size: 30px;
+}
+
+.variosparrafos{
+    color: darkgoldenrod;
+    font-size: 20px
+}
+
+.otraclase{
+    color: silver;
+    font-size: 20px
+}
+
+aside .otraclase{
+    color: yellowgreen;
+    font-size: 20px
+}
+
+.otraclase span{
+    color: violet;
+}
+
+div.otraclase{
+    color: darkgreen;
+}
+
+#Seccion2 {
+    color:skyblue;
+    font-size: 30px
+}
+
+/*Todos los parrafos con el atributo name*/
+p[name]{
+    color: palevioletred;
+}
+/*nth-child(#) aplica el estilo al elemento que ocupa la posicion dada*/
+/*la cuenta empieza en 1*/
+#tabla1 tr:nth-child(1){
+color: brown;
+font-size: 25px;
+}
+/*
+tr:nth-child(1){
+    color: violet;
+    font-size: 25px;
+    }
+    */
+/*Colorea los impares*/
+#tabla2 tr:nth-child(odd){
+background-color: blueviolet;
+    }
+
+    /*Colorea los pares*/
+#tabla2 tr:nth-child(even){
+        background-color: gold;
+            }    
+
+#tabla3 tr:nth-child(odd){
+    background-color: green;
+                    }
+/*Todos los div, excepto los que no tengan la clase otraclase*/                                    
+div :not(.otraclase){
+font-size: 50px;
+}                    

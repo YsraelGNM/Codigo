@@ -1,0 +1,87 @@
+/*before inyecta un elemento antes del elemento seleccionado*/
+#contenido::before{
+    content: ">";
+    border: 1px solid red;
+    color: green;
+}
+
+#contenido::after{
+    content: "ashaaaa";
+}
+
+header{
+    border: 1px solid blue;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    /* animation: [nombre de la animacion] [tiempo de reproduccion de la animacion] [funcion bezier] [delay] [nro de veces que se va a repetir | infinite] [sentido de ejecucion | normal | reverse] [forma de finalizacion de la animacion | none]*/
+    animation-name: MiAnimacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes MiAnimacion{
+    0%{
+background-color: red;
+    }
+    50%{
+        background-color: violet;
+        transform: scale(1.5);
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+#div1{
+    background-image: url('./AvengersTitulo.jpg');
+    border: 1px solid red;
+    height: 100px;
+    width: 150px;
+    margin-top: 40px;
+    animation-name: Mover;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes Mover{
+    0%{
+        transform: translate(0px,0px) rotate(0deg) scale(1);
+    }
+    25%{
+        transform: translate(200px,0px) rotate(90deg) scale(2);
+            }
+    50%{
+        transform: translate(200px,200px) rotate(180deg) scale(0.5);
+    }
+    75%{
+        transform: translate(0px,200px) rotate(270deg) scale(1.5);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(360deg) scale(1);
+    }
+}
+
+html{
+    font-size: 16px;
+}
+
+#div2{
+    /*1 rem = 16px*/
+    /*1.5 rem = 24px*/
+    /*1 em = 24 px por heredar al padre directo*/
+
+    font-size: 1.5rem;
+}
+
+#parrafo{
+    font-size: 1rem;
+}

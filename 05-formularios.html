@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <hr/>
+    <!-- Conjunto de elementos para ingresar gatos -->
+    <!-- action => ruta o direccion de destino hacia
+    donde los datos del formulario serán enviados -->
+    <!-- METHOD GET=> Verbo HTTP para enviar los datos a través
+    de la URL (VISIBLE por el usuario)-->
+    <!-- METHOD POST=> Verbo HTTP para enviar los datos a través
+    del servidor (INVISIBLE por el usuario) -->
+    <form action="./procesar.html" method="GET">
+        <p>
+            <!-- text=> ingreso de texto -->
+            <label for="IdNombres">Nombre:</label>
+            <input type="text" name="nombres" id="IdNombres" required minlength="10" maxlength="20" placeholder="Ingrese su Nombre">
+        </p>
+        <p>
+            <label for="IdEdad">Edad:</label>
+            <input type="number" name="edad" id="IdEdad">
+        </p>
+        <p>
+            <label for="IdEmail">Email</label>
+            <input type="email" name = "email" id="IdEmail" required> 
+        </p>
+        <p>
+            <label for="IdFecNac">Fecha de Nacimiento</label>
+            <input type="date" name="fecha" id="IdFecNac" required>
+        </p>
+<p>
+    <label for="masc">Masculino</label>
+    <input type="radio" name="genero" id="masc" value="M" checked>
+    <label for="fem">Femenino</label>
+    <input type="radio" name="genero" id="fem" value="F">
+    <label for="todo">No especifica</label>
+    <input type="radio" name="genero" id="todo" value="T">
+
+</p>
+
+<p>
+    <label for="comedia">Comedia</label>
+    <input type="checkbox" name="comedia" value="com" id="comedia">
+
+    <label for="accion">Accion</label>
+    <input type="checkbox" name="accion" value="acc" id="accion">
+
+    <label for="terror">Terror</label>
+    <input type="checkbox" name="terror" value="ter" id="terror">
+</p>
+<p>
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+</p>
+
+<p>
+    <label for="distrito">Distrito</label>
+    <select name="distrito" id="distrito">
+        <option value="CC">Cerro Colorado</option>
+        <option value="CA">Cayma</option>
+        <option value="YA">Yanahuara</option>
+    </select>
+</p>
+        <p>
+            <label for="IdContrasena">Contraseña</label>
+            <input type = "password" name="password" pattern="(?=.*\d)(?=.*\[a-z]])(?=.*\[A-Z]]){6,}" title="Mínimo 6 caracteres" id="IdContrasena" required>
+
+        </p>
+        <p>
+            <input type="submit" value="Iniciar Sesión">
+        </p>  
+    </form>
+
+</body>
+</html>
