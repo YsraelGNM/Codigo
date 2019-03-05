@@ -1,0 +1,12 @@
+article{
+    border: 1px solid red;
+}
+article img{
+    width: 100%;
+}
+
+@media(max-width: 500px){
+    img{
+        content: url('http://placehold.it/100x100');
+    }
+  }

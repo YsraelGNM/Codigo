@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    border: 1px solid red;
+}
+img{
+    float: right;
+}
+
+#clear{
+    clear: both;
+}
+
+.contenedor{
+    border: 1px solid blue;
+    background-color: whitesmoke;
+}
