@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./localstorage.js"></script>
+    <title>Document</title>
+    <style>
+        #div1{
+            height: 50px;
+            width: 70%;
+            border: 1px solid red;
+        }
+        #div2{
+            height: 50px;
+            width: 70%;
+            border: 1px solid blue;
+        }
+        #div3{
+            height: 250px;
+            width: 70%;
+            border: 1px solid green;
+        }
+        #div4{
+            height: 50px;
+            width: 70%;
+            border: 1px solid green;
+        }
+        #tabla, th, td, tr{
+            border: 1px solid   black;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <label>Nombre</label>
+        <input type="text" name="" id="nombre">
+        <label>RUC</label>
+        <input type="text" name="" id="ruc">
+        <label>Fecha</label>
+        <input type="date" name="" id="fecha">
+    </div>
+    <div id="div2">
+        <input type="text" name="" id="cant">
+        <input type="text" name="" id="desc">
+        <input type="text" name="" id="categoria">
+        <input type="text" name="" id="punit">
+        <input id="btn" type="button" value="Agregar">
+    </div>
+    <div id="div3">
+            <table id="tabla">
+                <tr id="tr">
+                    <th>Item</th>
+                    <th>Cantidad</th>
+                    <th>Descripcion</th>
+                    <th>Categoria</th>
+                    <th>P_Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+        </div>
+    <div id="div4">
+        <input id="btnT" type="button" value="Facturar">
+        <label>SubTotal :</label>
+        <label id="St">0</label>
+        <label>IGV :</label>
+        <label id="Igv">0</label>
+        <label>Total :</label>
+        <label id="Tt">0</label>
+    </div>
+</body>
+</html>

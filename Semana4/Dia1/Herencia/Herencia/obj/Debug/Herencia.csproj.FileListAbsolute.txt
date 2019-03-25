@@ -1,0 +1,6 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Herencia\bin\Debug\Herencia.exe.config
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Herencia\bin\Debug\Herencia.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Herencia\bin\Debug\Herencia.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Herencia\obj\Debug\Herencia.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Herencia\obj\Debug\Herencia.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Herencia\obj\Debug\Herencia.pdb

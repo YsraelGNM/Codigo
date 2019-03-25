@@ -1,0 +1,6 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana3\Dia4\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.exe.config
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana3\Dia4\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana3\Dia4\MiAplicacion\MiAplicacion\bin\Debug\MiAplicacion.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana3\Dia4\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana3\Dia4\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana3\Dia4\MiAplicacion\MiAplicacion\obj\Debug\MiAplicacion.pdb

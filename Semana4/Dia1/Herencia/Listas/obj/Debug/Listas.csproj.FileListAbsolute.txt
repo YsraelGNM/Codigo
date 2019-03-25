@@ -1,0 +1,6 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Listas\bin\Debug\Listas.exe.config
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Listas\bin\Debug\Listas.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Listas\bin\Debug\Listas.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Listas\obj\Debug\Listas.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Listas\obj\Debug\Listas.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana4\Dia1\Herencia\Listas\obj\Debug\Listas.pdb

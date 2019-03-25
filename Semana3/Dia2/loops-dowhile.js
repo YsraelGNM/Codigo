@@ -32,5 +32,8 @@ do{
     var contrasena = prompt("Ingrese su contraseña");
     if (contrasena != '123'){
         cont++;
+    }else{
+        break;
     }
 }while(cont < 3);
+console.log(`no hay mas intentos`);

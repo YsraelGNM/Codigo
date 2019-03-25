@@ -89,9 +89,34 @@ var dias = 15;
 var hotel_dia = 150;
 var comida_dia = 70;
 var gasto_dia = 100;
-console.log(hotel_dia*  dias);
-console.log(comida_dia*  dias);
-console.log(gasto_dia*  dias);
+console.log(hotel_dia *  dias);
+console.log(comida_dia *  dias);
+console.log(gasto_dia *  dias);
+
+//2.15
+var I = 8;
+var R = 50;
+var V = R * I;
+console.log(`La potencia es ${V*I}`);
+
+//2.19
+var lado = 10;
+console.log(lado^2);
+
+//2.20
+var x1 = 15*0.25;
+var x2 = 16*0.25;
+var x3 = 11*0.5;
+console.log(`el promedio es ${x1+x2+x3}`);
+
+//2.21
+console.log("------------------------2.21");
+var fec = new Date("May 8, 1977 11:20:25");
+console.log(fec);
+var result = new Date.now()
+result.setDate(result.getDate() - fec );
+console.log(result);
+
 
 
 //3.1
