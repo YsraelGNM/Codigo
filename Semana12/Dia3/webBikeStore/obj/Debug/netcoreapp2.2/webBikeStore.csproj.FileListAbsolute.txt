@@ -1,0 +1,14 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\bin\Debug\netcoreapp2.2\webBikeStore.deps.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\bin\Debug\netcoreapp2.2\webBikeStore.runtimeconfig.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\bin\Debug\netcoreapp2.2\webBikeStore.runtimeconfig.dev.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\bin\Debug\netcoreapp2.2\webBikeStore.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\bin\Debug\netcoreapp2.2\webBikeStore.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.csprojAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.RazorAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.RazorAssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.RazorTargetAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\webBikeStore\obj\Debug\netcoreapp2.2\webBikeStore.pdb

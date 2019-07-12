@@ -1,0 +1,1 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia2\EF_FluentAPI\EF_FluentAPI\bin\Debug\EF_FluentAPI.exe.config

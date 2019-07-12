@@ -1,10 +1,17 @@
 window.onload = ()=>{
-    var map;
+    var map, miPosicion;
+    var btnMiPosicion = document.getElementById("btnMiPosicion");
+    var btnBorrarMiPosicion = document.getElementById("btnBorrarMiPosicion");
+    var markers = [];
+    var lineas = [];
+    var serpentina = [];
+    var point;
+
     let configurarMapa = ()=>{
         map = new google.maps.Map(document.getElementById('mapa'), {
         center: {lat: -34.397, lng: 150.644},
         zoom: 10,
-        style:[
+        styles:[
             {
               "elementType": "geometry",
               "stylers": [
@@ -200,7 +207,71 @@ window.onload = ()=>{
             }
           ]
         });
+        configurarListeners();
     };
     
+    let configurarListeners = ()=>{
+        map.addListener('click',(coords)=>{
+            //debugger;
+            point = new google.maps.LatLng(coords.latLng.lat(),coords.latLng.lng());
+            colocarMarcador(point);
+        })
+    };
+
+    let miPos = ()=>{
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition((position)=>{
+                point = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+                colocarMarcador(point);
+            },(error)=>{
+                console.log(error);
+            });
+        }
+    };
+
+    let colocarMarcador = (point)=>{
+        miPosicion = new google.maps.Marker({position:point,map:map,draggable:true});
+        map.setCenter(point);
+        //debugger;
+        if (markers.length > 0){
+            var nuevo = new google.maps.LatLng(point.lat(),point.lng());
+            var anterior = new google.maps.LatLng(markers[markers.length-1].position.lat(), markers[markers.length-1].position.lng());
+            var polyline = new google.maps.Polyline({path:[nuevo, anterior],map:map,strokeColor: "#000ddd", strokeWeight:2});
+            lineas.push(polyline);
+        };
+        markers.push(miPosicion);
+        //map.addOverlay(polyline)
+        
+        // Añadiendo el evento drag al marcador creado
+        miPosicion.addListener('drag',(coords)=>{
+            if (serpentina.length > 0){
+                var ptoNew = new google.maps.LatLng(coords.latLng.lat(),coords.latLng.lng());
+                var ptoLast = new google.maps.LatLng(serpentina[serpentina.length-1].latLng.lat(), serpentina[serpentina.length-1].latLng.lng());
+                var polyline = new google.maps.Polyline({path:[ptoNew, ptoLast],map:map,strokeColor: "#0DFCF1", strokeWeight:2});
+                lineas.push(polyline);
+            };
+            serpentina.push(coords);
+        });
+    };
+
+    btnMiPosicion.onclick = miPos;
+
+    btnBorrarMiPosicion.onclick = ()=>{
+       markers.forEach((elemento)=>{
+        elemento.setMap(null);
+       })
+       markers = [];
+       lineas.forEach((elemento)=>{
+        elemento.setMap(null);
+       })
+       lineas = [];
+       serpentina.forEach((elemento)=>{
+           elemento.setMap(null);
+       })
+       serpentina = [];
+    }
+
     configurarMapa();
+
+    
 };

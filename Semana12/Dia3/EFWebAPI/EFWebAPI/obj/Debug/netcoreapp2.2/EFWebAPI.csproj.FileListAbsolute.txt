@@ -1,0 +1,14 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\bin\Debug\netcoreapp2.2\EFWebAPI.deps.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\bin\Debug\netcoreapp2.2\EFWebAPI.runtimeconfig.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\bin\Debug\netcoreapp2.2\EFWebAPI.runtimeconfig.dev.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\bin\Debug\netcoreapp2.2\EFWebAPI.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\bin\Debug\netcoreapp2.2\EFWebAPI.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.csprojAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.RazorAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.RazorAssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\EFWebAPI\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.pdb

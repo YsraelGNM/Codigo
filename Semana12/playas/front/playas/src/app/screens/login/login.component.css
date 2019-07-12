@@ -1,0 +1,19 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.example-card {
+    max-width: 400px;
+  }
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+  
+.example-form{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: inherit;
+}

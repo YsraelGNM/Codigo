@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EF FluentAPI.exe.config
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EF FluentAPI.exe
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EF FluentAPI.pdb
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EntityFramework.dll
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EntityFramework.xml
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.csproj.CopyComplete
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.exe
+C:\Users\USER\source\repos\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia2\EF FluentAPI\EF FluentAPI\bin\Debug\EF FluentAPI.exe.config
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia2\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia2\EF FluentAPI\EF FluentAPI\obj\Debug\EF FluentAPI.pdb

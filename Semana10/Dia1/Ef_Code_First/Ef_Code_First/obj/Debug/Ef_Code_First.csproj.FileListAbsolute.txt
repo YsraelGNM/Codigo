@@ -1,0 +1,10 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\Ef_Code_First.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\Ef_Code_First.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\EntityFramework.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\EntityFramework.xml
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\obj\Debug\Ef_Code_First.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\obj\Debug\Ef_Code_First.exe
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\obj\Debug\Ef_Code_First.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana10\Dia1\Ef_Code_First\Ef_Code_First\bin\Debug\Ef_Code_First.exe.config

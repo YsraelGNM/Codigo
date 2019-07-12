@@ -1,0 +1,7 @@
+.btn-red{
+    border-radius: 5px;
+    padding: 6px;
+    background-color: red;
+    color: aliceblue;
+    font-weight: 600;
+}

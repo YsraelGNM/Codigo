@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TiendaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Correlativo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_dtd" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="serie" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="numero" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleTipoDocumento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Documento">
+    <Key>
+      <PropertyRef Name="id_persona" />
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="id_dtd" />
+    </Key>
+    <Property Name="id_persona" Type="int" Nullable="false" />
+    <Property Name="serie" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="numero" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="observaciones" Type="varchar" MaxLength="500" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="fecha_grabado" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="id_dtd" Type="varchar" MaxLength="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DocumentoDetalle">
+    <Key>
+      <PropertyRef Name="id_dtd" />
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="id_persona" />
+      <PropertyRef Name="item" />
+    </Key>
+    <Property Name="id_dtd" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="serie" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="numero" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="id_persona" Type="int" Nullable="false" />
+    <Property Name="item" Type="int" Nullable="false" />
+    <Property Name="id_producto" Type="int" />
+    <Property Name="cantidad" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="precio_unitario" Type="decimal" Precision="18" Scale="6" />
+  </EntityType>
+  <EntityType Name="Kardex">
+    <Key>
+      <PropertyRef Name="id_dtd" />
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="id_persona" />
+      <PropertyRef Name="item" />
+    </Key>
+    <Property Name="id_dtd" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="serie" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="numero" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="id_persona" Type="int" Nullable="false" />
+    <Property Name="item" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="id_producto" Type="int" Nullable="false" />
+    <Property Name="ingreso" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="salida" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="saldo" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ingreso_val" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="salida_val" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="saldo_val" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="costo_promedio" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="apellido_paterno" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="apellido_materno" Type="varchar" MaxLength="100" />
+    <Property Name="nombre" Type="varchar" MaxLength="100" />
+    <Property Name="DNI" Type="varchar" MaxLength="8" />
+    <Property Name="RUC" Type="varchar" MaxLength="11" />
+    <Property Name="cliente" Type="bit" />
+    <Property Name="trabajador" Type="bit" />
+    <Property Name="proveedor" Type="bit" />
+    <Property Name="email" Type="varchar" MaxLength="500" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="fecha_grabado" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="usuario" Type="bit" />
+    <Property Name="user_name" Type="varchar" MaxLength="15" />
+    <Property Name="user_pwd" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="unidad" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="precio" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="fecha_grabado" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Correlativo_DetalleTipoDocumento">
+    <End Role="DetalleTipoDocumento" Type="Self.DetalleTipoDocumento" Multiplicity="1" />
+    <End Role="Correlativo" Type="Self.Correlativo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleTipoDocumento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Correlativo">
+        <PropertyRef Name="id_dtd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documento_DetalleTipoDocumento">
+    <End Role="DetalleTipoDocumento" Type="Self.DetalleTipoDocumento" Multiplicity="1" />
+    <End Role="Documento" Type="Self.Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleTipoDocumento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="id_dtd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documento_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Documento" Type="Self.Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="id_persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documento_Persona1">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Documento" Type="Self.Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentoDetalle_Documento">
+    <End Role="Documento" Type="Self.Documento" Multiplicity="1" />
+    <End Role="DocumentoDetalle" Type="Self.DocumentoDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documento">
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_dtd" />
+      </Principal>
+      <Dependent Role="DocumentoDetalle">
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_dtd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentoDetalle_Productos">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="DocumentoDetalle" Type="Self.DocumentoDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DocumentoDetalle">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kardex_DocumentoDetalle">
+    <End Role="DocumentoDetalle" Type="Self.DocumentoDetalle" Multiplicity="1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentoDetalle">
+        <PropertyRef Name="id_dtd" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="item" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="id_dtd" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="item" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kardex_Productos">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Persona1" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Persona1">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Productos_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TiendaModelStoreContainer">
+    <EntitySet Name="Correlativo" EntityType="Self.Correlativo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleTipoDocumento" EntityType="Self.DetalleTipoDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Documento" EntityType="Self.Documento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocumentoDetalle" EntityType="Self.DocumentoDetalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kardex" EntityType="Self.Kardex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Correlativo_DetalleTipoDocumento" Association="Self.FK_Correlativo_DetalleTipoDocumento">
+      <End Role="DetalleTipoDocumento" EntitySet="DetalleTipoDocumento" />
+      <End Role="Correlativo" EntitySet="Correlativo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documento_DetalleTipoDocumento" Association="Self.FK_Documento_DetalleTipoDocumento">
+      <End Role="DetalleTipoDocumento" EntitySet="DetalleTipoDocumento" />
+      <End Role="Documento" EntitySet="Documento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documento_Persona" Association="Self.FK_Documento_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Documento" EntitySet="Documento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documento_Persona1" Association="Self.FK_Documento_Persona1">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Documento" EntitySet="Documento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentoDetalle_Documento" Association="Self.FK_DocumentoDetalle_Documento">
+      <End Role="Documento" EntitySet="Documento" />
+      <End Role="DocumentoDetalle" EntitySet="DocumentoDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentoDetalle_Productos" Association="Self.FK_DocumentoDetalle_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="DocumentoDetalle" EntitySet="DocumentoDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kardex_DocumentoDetalle" Association="Self.FK_Kardex_DocumentoDetalle">
+      <End Role="DocumentoDetalle" EntitySet="DocumentoDetalle" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kardex_Productos" Association="Self.FK_Kardex_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Persona" Association="Self.FK_Persona_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Persona1" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Productos_Persona" Association="Self.FK_Productos_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

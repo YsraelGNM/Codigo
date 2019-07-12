@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+      <form class="col-md-6" #frmCrearRest="ngForm" (ngSubmit)="crearRestaurant(frmCrearRest)">
+
+          <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese el nombre del Restaurant" 
+                      aria-describedby="helpId"
+                      [(ngModel)] = "objRestaurant.nombre"
+                      #nombre = "ngModel"
+                      [ngClass]="{'border-danger': 'nombre.touched && !nombre.valid'}"
+                      required>
+              <small id="helpId" class="text-danger" *ngIf="nombre.touched && !nombre.valid">Es obligatorio este campo</small>
+          </div>
+    
+          <div class="form-group">
+              <label for="direccion">Direccion</label>
+              <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese la direccion del Restaurant" 
+                      aria-describedby="helpId"
+                      [(ngModel)] = "objRestaurant.direccion"
+                      #direccion = "ngModel"
+                      [ngClass]="{'border-danger': 'direccion.touched && !direccion.valid'}"
+                      required>
+              <small id="helpId" class="text-danger" *ngIf="direccion.touched && !direccion.valid">Es obligatorio este campo</small>
+          </div>
+    
+          <div class="form-group">
+            <input type="submit" value="Crear Restaurant" class="btn btn-block btn-primary" [disabled] = "!frmCrearRest.form.valid">
+          </div>
+
+      </form>
+  </div>
+</div>

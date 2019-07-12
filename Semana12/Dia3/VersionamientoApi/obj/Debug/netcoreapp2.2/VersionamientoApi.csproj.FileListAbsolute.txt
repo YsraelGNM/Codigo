@@ -1,0 +1,14 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\bin\Debug\netcoreapp2.2\VersionamientoApi.deps.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\bin\Debug\netcoreapp2.2\VersionamientoApi.runtimeconfig.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\bin\Debug\netcoreapp2.2\VersionamientoApi.runtimeconfig.dev.json
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\bin\Debug\netcoreapp2.2\VersionamientoApi.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\bin\Debug\netcoreapp2.2\VersionamientoApi.pdb
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.csprojAssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.RazorAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.RazorAssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.RazorTargetAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.dll
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana12\Dia3\VersionamientoApi\obj\Debug\netcoreapp2.2\VersionamientoApi.pdb

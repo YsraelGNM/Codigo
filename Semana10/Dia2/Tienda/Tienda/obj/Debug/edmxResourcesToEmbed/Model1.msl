@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TiendaModelStoreContainer" CdmEntityContainer="TiendaEntities">
+    <EntitySetMapping Name="Correlativoes">
+      <EntityTypeMapping TypeName="TiendaModel.Correlativo">
+        <MappingFragment StoreEntitySet="Correlativo">
+          <ScalarProperty Name="id_dtd" ColumnName="id_dtd" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleTipoDocumentoes">
+      <EntityTypeMapping TypeName="TiendaModel.DetalleTipoDocumento">
+        <MappingFragment StoreEntitySet="DetalleTipoDocumento">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documentoes">
+      <EntityTypeMapping TypeName="TiendaModel.Documento">
+        <MappingFragment StoreEntitySet="Documento">
+          <ScalarProperty Name="id_persona" ColumnName="id_persona" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="fecha_grabado" ColumnName="fecha_grabado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_dtd" ColumnName="id_dtd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentoDetalles">
+      <EntityTypeMapping TypeName="TiendaModel.DocumentoDetalle">
+        <MappingFragment StoreEntitySet="DocumentoDetalle">
+          <ScalarProperty Name="id_dtd" ColumnName="id_dtd" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="id_persona" ColumnName="id_persona" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="precio_unitario" ColumnName="precio_unitario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kardexes">
+      <EntityTypeMapping TypeName="TiendaModel.Kardex">
+        <MappingFragment StoreEntitySet="Kardex">
+          <ScalarProperty Name="id_dtd" ColumnName="id_dtd" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="id_persona" ColumnName="id_persona" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="ingreso" ColumnName="ingreso" />
+          <ScalarProperty Name="salida" ColumnName="salida" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+          <ScalarProperty Name="ingreso_val" ColumnName="ingreso_val" />
+          <ScalarProperty Name="salida_val" ColumnName="salida_val" />
+          <ScalarProperty Name="saldo_val" ColumnName="saldo_val" />
+          <ScalarProperty Name="costo_promedio" ColumnName="costo_promedio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="TiendaModel.Producto">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fecha_grabado" ColumnName="fecha_grabado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="unidad" ColumnName="unidad" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="TiendaModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="user_pwd" ColumnName="user_pwd" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fecha_grabado" ColumnName="fecha_grabado" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+          <ScalarProperty Name="trabajador" ColumnName="trabajador" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="RUC" ColumnName="RUC" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,78 @@
+ <form class="example-form" >
+
+  <br>
+  <img style="height:120px;width:150px;" id="userimagen" alt="" srcset="">
+  <label id="user"></label>
+  <br>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Codigo Cliente" [(ngModel)]="codCliente" name="codCliente" id="codCliente" />
+    <button type="submit" (click)="customersGetById()">Buscar</button>
+  </mat-form-field>
+
+
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="First name" [(ngModel)]="objCustomers.firstname" name="firstname" id="firstname">
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Long Last Name That Will Be Truncated" [(ngModel)]="objCustomers.lastname" name="lastname" id="lastname">
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    <mat-form-field class="example-full-width">
+      <span matPrefix>+1 &nbsp;</span>
+      <input type="tel" matInput placeholder="Telephone" [(ngModel)]="objCustomers.phone" name="phone" id="phone">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" [(ngModel)]="objCustomers.email" name="email" id="email">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Street" [(ngModel)]="objCustomers.street" name="street" id="street"></textarea>
+    </mat-form-field>
+  </p>
+
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="City" [(ngModel)]="objCustomers.city" name="city" id="city">
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="State" [(ngModel)]="objCustomers.state" name="state" id="state">
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043" [(ngModel)]="objCustomers.zipcode" name="zipcode" id="zipcode">
+          <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+
+  <button type="submit" (click)="customersInsert()">Guardar</button>
+  <br>
+  <button type="submit" (click)="customersUpDate()">UpDate</button>
+  <br>
+  <button type="submit" (click)="customersDeleted()">Deleted</button>
+</form>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TiendaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Correlativo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_dtd" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="serie" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DetalleTipoDocumento" Relationship="Self.FK_Correlativo_DetalleTipoDocumento" FromRole="Correlativo" ToRole="DetalleTipoDocumento" />
+  </EntityType>
+  <EntityType Name="DetalleTipoDocumento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Correlativoes" Relationship="Self.FK_Correlativo_DetalleTipoDocumento" FromRole="DetalleTipoDocumento" ToRole="Correlativo" />
+    <NavigationProperty Name="Documentoes" Relationship="Self.FK_Documento_DetalleTipoDocumento" FromRole="DetalleTipoDocumento" ToRole="Documento" />
+  </EntityType>
+  <EntityType Name="Documento">
+    <Key>
+      <PropertyRef Name="id_persona" />
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="id_dtd" />
+    </Key>
+    <Property Name="id_persona" Type="Int32" Nullable="false" />
+    <Property Name="serie" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="observaciones" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="id_usuario" Type="Int32" Nullable="false" />
+    <Property Name="fecha_grabado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="id_dtd" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DetalleTipoDocumento" Relationship="Self.FK_Documento_DetalleTipoDocumento" FromRole="Documento" ToRole="DetalleTipoDocumento" />
+    <NavigationProperty Name="DocumentoDetalles" Relationship="Self.FK_DocumentoDetalle_Documento" FromRole="Documento" ToRole="DocumentoDetalle" />
+    <NavigationProperty Name="Persona" Relationship="TiendaModel.FK_Documento_Persona" FromRole="Documento" ToRole="Persona" />
+    <NavigationProperty Name="Persona1" Relationship="TiendaModel.FK_Documento_Persona1" FromRole="Documento" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="DocumentoDetalle">
+    <Key>
+      <PropertyRef Name="id_dtd" />
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="id_persona" />
+      <PropertyRef Name="item" />
+    </Key>
+    <Property Name="id_dtd" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="serie" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_persona" Type="Int32" Nullable="false" />
+    <Property Name="item" Type="Int32" Nullable="false" />
+    <Property Name="id_producto" Type="Int32" />
+    <Property Name="cantidad" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="precio_unitario" Type="Decimal" Precision="18" Scale="6" />
+    <NavigationProperty Name="Documento" Relationship="Self.FK_DocumentoDetalle_Documento" FromRole="DocumentoDetalle" ToRole="Documento" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_DocumentoDetalle_Productos" FromRole="DocumentoDetalle" ToRole="Productos" />
+    <NavigationProperty Name="Kardex" Relationship="Self.FK_Kardex_DocumentoDetalle" FromRole="DocumentoDetalle" ToRole="Kardex" />
+  </EntityType>
+  <EntityType Name="Kardex">
+    <Key>
+      <PropertyRef Name="id_dtd" />
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="numero" />
+      <PropertyRef Name="id_persona" />
+      <PropertyRef Name="item" />
+    </Key>
+    <Property Name="id_dtd" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="serie" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_persona" Type="Int32" Nullable="false" />
+    <Property Name="item" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_producto" Type="Int32" Nullable="false" />
+    <Property Name="ingreso" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="salida" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="saldo" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ingreso_val" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="salida_val" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="saldo_val" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="costo_promedio" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <NavigationProperty Name="DocumentoDetalle" Relationship="Self.FK_Kardex_DocumentoDetalle" FromRole="Kardex" ToRole="DocumentoDetalle" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_Kardex_Productos" FromRole="Kardex" ToRole="Productos" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="unidad" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="precio" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+    <NavigationProperty Name="DocumentoDetalles" Relationship="Self.FK_DocumentoDetalle_Productos" FromRole="Productos" ToRole="DocumentoDetalle" />
+    <NavigationProperty Name="Kardexes" Relationship="Self.FK_Kardex_Productos" FromRole="Productos" ToRole="Kardex" />
+    <Property Name="fecha_grabado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="id_usuario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="TiendaModel.FK_Productos_Persona" FromRole="Producto" ToRole="Persona" />
+  </EntityType>
+  <Association Name="FK_Correlativo_DetalleTipoDocumento">
+    <End Role="DetalleTipoDocumento" Type="Self.DetalleTipoDocumento" Multiplicity="1" />
+    <End Role="Correlativo" Type="Self.Correlativo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleTipoDocumento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Correlativo">
+        <PropertyRef Name="id_dtd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documento_DetalleTipoDocumento">
+    <End Role="DetalleTipoDocumento" Type="Self.DetalleTipoDocumento" Multiplicity="1" />
+    <End Role="Documento" Type="Self.Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleTipoDocumento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="id_dtd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentoDetalle_Documento">
+    <End Role="Documento" Type="Self.Documento" Multiplicity="1" />
+    <End Role="DocumentoDetalle" Type="Self.DocumentoDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Documento">
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_dtd" />
+      </Principal>
+      <Dependent Role="DocumentoDetalle">
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_dtd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocumentoDetalle_Productos">
+    <End Role="Productos" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="DocumentoDetalle" Type="Self.DocumentoDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="DocumentoDetalle">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kardex_DocumentoDetalle">
+    <End Role="DocumentoDetalle" Type="Self.DocumentoDetalle" Multiplicity="1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentoDetalle">
+        <PropertyRef Name="id_dtd" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="item" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="id_dtd" />
+        <PropertyRef Name="serie" />
+        <PropertyRef Name="numero" />
+        <PropertyRef Name="id_persona" />
+        <PropertyRef Name="item" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kardex_Productos">
+    <End Role="Productos" Type="Self.Producto" Multiplicity="1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TiendaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Correlativoes" EntityType="Self.Correlativo" />
+    <EntitySet Name="DetalleTipoDocumentoes" EntityType="Self.DetalleTipoDocumento" />
+    <EntitySet Name="Documentoes" EntityType="Self.Documento" />
+    <EntitySet Name="DocumentoDetalles" EntityType="Self.DocumentoDetalle" />
+    <EntitySet Name="Kardexes" EntityType="Self.Kardex" />
+    <EntitySet Name="Productos" EntityType="Self.Producto" />
+    <AssociationSet Name="FK_Correlativo_DetalleTipoDocumento" Association="Self.FK_Correlativo_DetalleTipoDocumento">
+      <End Role="DetalleTipoDocumento" EntitySet="DetalleTipoDocumentoes" />
+      <End Role="Correlativo" EntitySet="Correlativoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documento_DetalleTipoDocumento" Association="Self.FK_Documento_DetalleTipoDocumento">
+      <End Role="DetalleTipoDocumento" EntitySet="DetalleTipoDocumentoes" />
+      <End Role="Documento" EntitySet="Documentoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentoDetalle_Documento" Association="Self.FK_DocumentoDetalle_Documento">
+      <End Role="Documento" EntitySet="Documentoes" />
+      <End Role="DocumentoDetalle" EntitySet="DocumentoDetalles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocumentoDetalle_Productos" Association="Self.FK_DocumentoDetalle_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="DocumentoDetalle" EntitySet="DocumentoDetalles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kardex_DocumentoDetalle" Association="Self.FK_Kardex_DocumentoDetalle">
+      <End Role="DocumentoDetalle" EntitySet="DocumentoDetalles" />
+      <End Role="Kardex" EntitySet="Kardexes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kardex_Productos" Association="Self.FK_Kardex_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Kardex" EntitySet="Kardexes" />
+    </AssociationSet>
+    <EntitySet Name="Persona" EntityType="TiendaModel.Persona" />
+    <AssociationSet Name="FK_Documento_Persona" Association="TiendaModel.FK_Documento_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Documento" EntitySet="Documentoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documento_Persona1" Association="TiendaModel.FK_Documento_Persona1">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Documento" EntitySet="Documentoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Persona" Association="TiendaModel.FK_Persona_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Persona1" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Productos_Persona" Association="TiendaModel.FK_Productos_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Producto" EntitySet="Productos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="apellido_paterno" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="apellido_materno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DNI" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="RUC" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="cliente" Type="Boolean" />
+    <Property Name="trabajador" Type="Boolean" />
+    <Property Name="proveedor" Type="Boolean" />
+    <Property Name="email" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="id_usuario" Type="Int32" />
+    <Property Name="fecha_grabado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int32" Nullable="false" />
+    <Property Name="usuario" Type="Boolean" />
+    <Property Name="user_name" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="user_pwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Documento" Relationship="TiendaModel.FK_Documento_Persona" FromRole="Persona" ToRole="Documento" />
+    <NavigationProperty Name="Documento1" Relationship="TiendaModel.FK_Documento_Persona1" FromRole="Persona" ToRole="Documento" />
+    <NavigationProperty Name="Persona1" Relationship="TiendaModel.FK_Persona_Persona" FromRole="Persona" ToRole="Persona1" />
+    <NavigationProperty Name="Persona2" Relationship="TiendaModel.FK_Persona_Persona" FromRole="Persona1" ToRole="Persona" />
+    <NavigationProperty Name="Productos" Relationship="TiendaModel.FK_Productos_Persona" FromRole="Persona" ToRole="Producto" />
+  </EntityType>
+  <Association Name="FK_Documento_Persona">
+    <End Type="TiendaModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="TiendaModel.Documento" Role="Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="id_persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documento_Persona1">
+    <End Type="TiendaModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="TiendaModel.Documento" Role="Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Persona">
+    <End Type="TiendaModel.Persona" Role="Persona" Multiplicity="0..1" />
+    <End Type="TiendaModel.Persona" Role="Persona1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Persona1">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Productos_Persona">
+    <End Type="TiendaModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="TiendaModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,1 @@
+C:\Users\USUARIO\Documents\GitHub\backend3\backend.tecsup3\Semana 12\Dia3\RepositoryDBLINQ\RepositoryDBLINQ\bin\Debug\RepositoryDBLINQ.exe.config

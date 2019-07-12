@@ -1,0 +1,53 @@
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\Window1.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\Window1.g.cs
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\App.g.cs
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyle_MarkupCompile.cache
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\ButtonStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\SharedBrushes.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\RibbonStyleAggregator.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\TabControlStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\GroupBoxStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\Resources\Icons.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\RichTextBoxStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\ToolTipStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyle_MarkupCompile.lref
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\Resources\Icons.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\ButtonStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\RichTextBoxStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\GroupBoxStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\RibbonStyleAggregator.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\SharedBrushes.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\TabControlStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyles\ToolTipStyle.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\App.g.cs
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyle_MarkupCompile.cache
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\RibbonStyle_MarkupCompile.lref
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\App.baml
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\MainWindow.g.cs
+C:\Documents and Settings\Sheva\Desktop\RibbonStyle1\RibbonStyle\obj\Debug\MainWindow.baml
+.\bin\Debug\RibbonStyle.exe
+.\bin\Debug\RibbonStyle.pdb
+obj\Debug\ResolveAssemblyReference.cache
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\Resources\Icons.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\ButtonStyle.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\RichTextBoxStyle.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\GroupBoxStyle.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\RibbonStyleAggregator.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\SharedBrushes.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\TabControlStyle.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyles\ToolTipStyle.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\App.baml
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\MainWindow.g.cs
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\App.g.cs
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\GeneratedInternalTypeHelper.g.cs
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyle_MarkupCompile.cache
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\RibbonStyle_MarkupCompile.lref
+f:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\MainWindow.baml
+obj\Debug\RibbonStyle.g.resources
+obj\Debug\RibbonStyle.Properties.Resources.resources
+obj\Debug\RibbonStyle.csproj.GenerateResource.Cache
+obj\Debug\RibbonStyle.exe
+obj\Debug\RibbonStyle.pdb
+F:\My Documents\Personal Projects\Smart Client\Avalon\RibbonStyle\RibbonStyle\obj\Debug\themes\generic.baml

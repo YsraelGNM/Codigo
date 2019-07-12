@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div *ngIf="!restaurants"
+        class="spinner-grow"
+        role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <table datatable class="table" *ngIf="restaurants">
+    <thead>
+      <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Direccion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rest of restaurants">
+        <td>{{rest.id}}</td>
+        <td>{{rest.nombre}}</td>
+        <td>{{rest.direccion}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

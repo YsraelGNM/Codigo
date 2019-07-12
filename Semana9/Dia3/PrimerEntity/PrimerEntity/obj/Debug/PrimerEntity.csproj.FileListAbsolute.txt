@@ -1,0 +1,2 @@
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana9\Dia3\PrimerEntity\PrimerEntity\bin\Debug\PrimerEntity.exe.config
+C:\Users\USUARIO\Documents\GitHub\Codigo\Semana9\Dia3\PrimerEntity\PrimerEntity\obj\Debug\PrimerEntity.csprojResolveAssemblyReference.cache

@@ -1,0 +1,18 @@
+<mat-card>{{usuarioConectado}}</mat-card>
+<hr>
+<app-listatienda></app-listatienda>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date"  [(ngModel)]="objVenta.fecha" id="fecha" name="fecha">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<input type="number" name="monto" id="monto"  [(ngModel)]="objVenta.monto">
+<br/>
+<button type="submit" (click)="guardar()">Guardar</button>
+<div class="card">
+    <canvas id="realtime">{{ chartRealtime }}</canvas>
+    <div class="card-content">
+     <h3>Realtime</h3>
+     <p>Esta gráfica muestra información en tiempo real</p>
+    </div>
+</div>
